@@ -1,13 +1,13 @@
 body{
     animation-name:sky;
-    animation-duration:10s;
+    animation-duration:16s;
     animation-iteration-count:infinite;
     background-color:darkblue;
     margin:0;
 }
 .Sun{
     animation-name:sunrise;
-    animation-duration:10s;
+    animation-duration:15s;
     animation-iteration-count:infinite;
     height:100px;
     width:100px;
@@ -25,14 +25,17 @@ body{
     0%{
         background-color:darkblue;
     }
-    10%{
+    15%{
         background-color:pink;
-    }
-    40%{
-        background-color:cyan;
     }
     75%{
+        background-color:cyan;
+    }
+    80%{
         background-color:pink;
+    }
+    100%{
+        background-color:darkblue;
     }
 }
 @keyframes sunrise{
