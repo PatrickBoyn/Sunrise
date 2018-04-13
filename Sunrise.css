@@ -1,0 +1,55 @@
+body{
+    animation-name:sky;
+    animation-duration:10s;
+    animation-iteration-count:infinite;
+    background-color:darkblue;
+    margin:0;
+}
+.Sun{
+    animation-name:sunrise;
+    animation-duration:10s;
+    animation-iteration-count:infinite;
+    height:100px;
+    width:100px;
+    border-radius:50%;
+    background:darkorange;
+    transform:translate(0, 642px);
+}
+.Ground{
+    height:300px;
+    width:100%;
+    background:green;
+    transform:translateY(640px);
+}
+@keyframes sky{
+    0%{
+        background-color:darkblue;
+    }
+    10%{
+        background-color:pink;
+    }
+    40%{
+        background-color:cyan;
+    }
+    75%{
+        background-color:pink;
+    }
+}
+@keyframes sunrise{
+    25%{
+        background-color:orange;
+    }
+    50%{
+        background-color:yellow;
+        transform:translate(900px, 100px);
+    }
+    75%{
+        background-color:yellow;
+        transform:translate(980px, 100px);
+    }
+    100%{
+        transform:translate(1800px,640px);
+        background-color:red;
+    }
+
+}
